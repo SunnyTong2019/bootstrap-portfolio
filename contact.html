@@ -12,6 +12,12 @@
         .custom-border {
             border-width: 7px !important;
         }
+
+        .custom-footer {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 
@@ -26,36 +32,35 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link border-right px-3" href="#">About</a>
+                    <a class="nav-link border-right px-3" href="index.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link border-right px-3" href="#">Portfolio</a>
+                    <a class="nav-link border-right px-3" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#">Contact</a>
+                    <a class="nav-link px-3" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="bg-light border-top pb-5">
+    <div class="bg-light border-top pb-5 min-vh-100 mb-5">
         <div class="container">
             <div class="row mt-5">
                 <div class="col-sm-1"></div>
+
                 <div class="col-12 col-sm-10 bg-white px-4 pt-4 pb-3 border">
-                        <h4 class="text-info">Contact</h4>
-                        <hr class="my-4">
+                    <h4 class="text-info">Contact</h4>
+                    <hr class="my-4">
                     <form>
                         <div class="form-group">
                             <label for="formGroupExampleInput">Name</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput"
-                                placeholder="John Smith">
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Smith">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" placeholder="example@gmail.com">
-
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Message</label>
@@ -64,12 +69,14 @@
                         <button type="submit" class="btn btn-info">Submit</button>
                     </form>
                 </div>
+
                 <div class="col-sm-1"></div>
             </div>
         </div>
     </div>
 
-    <footer class="card-footer text-muted border-top border-info bg-dark custom-border pt-5 pb-0 text-center">Copyright
+    <footer class="text-muted text-center border-top border-info bg-dark pt-5 pb-0 custom-border custom-footer">
+        Copyright
         ©</footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
